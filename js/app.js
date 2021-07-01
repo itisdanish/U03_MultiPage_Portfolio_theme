@@ -6,6 +6,12 @@
       interval: 6000,
       pause: 'hover'
     });
+
+    // Lightbox Init
+    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
     
     // Video Play
     $(function () {
